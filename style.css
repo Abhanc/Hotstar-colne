@@ -82,6 +82,9 @@ display:flex;
     padding: 20px 20px;
 
 }
+/* .sWidthInc{
+    width:300px; 
+}*/
 .search-icon{
     position:absolute;
     right:60px;
@@ -96,6 +99,11 @@ display:flex;
 
 
 /*crousel section*/
+
+.carouseldiv{
+    /* padding-bottom:20px; */
+    margin:0 50px 20px 50px;
+}
 .myCrosel{
     height:700px;
     
@@ -130,14 +138,35 @@ display:flex;
 
 /* list type 1 */
 
+
+.Card-container-vartical{
+    position: relative;
+    width: 92%;
+    height: 269px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+
+}
+
+.Card-container-vartical::-webkit-scrollbar{
+    display: none;
+}
+
     .rippleCard1{
-        position:relative;
-        min-width:150px;
-        width:150px;
-        min-height:200px;
-        height:200px;
+        position: relative;
+        min-width: 176px;
+        width: 199px;
+        min-height: 233px;
+        height: 233px;
+        overflow: hidden;
+        transition: 0.5;
         padding: 0 10px;
     }
+
     .rippleCard1:hover{
         transform: scale(1.15);
         overflow: hidden;
@@ -203,12 +232,12 @@ display:flex;
 .listHeading2:hover{
     color:rgb(21, 21, 223);
 }
-.Spacelist{
+/* .Spacelist{
     height: 30px;
 }
 .SpaceHC{
     height:10px;
-}
+} */
 .details{
 
     width: 100%;
@@ -242,31 +271,32 @@ display:flex;
 
 .rippleCard2{
     position:relative;
-    min-width: 200px;
+    min-width: 222px;
     width:200px;
     min-height:120px;
     height:120px;
     overflow:hidden;
     transition:0.5;
-    padding: 0 8px ;
+    padding: 0 15px ;
 
    
 }
 /* for all card conatiner */
-.Card-container{
+
+.Card-container-horizental
+{
     position: relative;
     width: 92%;
-    height: 160px;
+    height: 172px;
     display: flex;
     margin: 0 auto;
     align-items: center;
     overflow-x: auto;
     overflow-y: visible;
     scroll-behavior: smooth;
-
 }
 
-.Card-container::-webkit-scrollbar{
+.Card-container-horizental::-webkit-scrollbar{
     display: none;
 }
  
@@ -276,10 +306,15 @@ display:flex;
 
 
 .CardImage {
-    height:100%;
-    width : 100%;
-    object-fit:cover;
-    border-radius:5%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 #name{
